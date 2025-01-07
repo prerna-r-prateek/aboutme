@@ -28,7 +28,17 @@
       padding: 2rem 1rem;
     }
     header h1 {
-      margin: 0;
+      margin: 0.5rem 0 0.25rem 0;
+    }
+
+    /* Profile Picture */
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover; /* Ensures the image is cropped to fit */
+      margin-bottom: 1rem;
+      border: 3px solid #ffffff; /* Optional border styling */
     }
 
     /* Navigation */
@@ -78,6 +88,9 @@
 
   <!-- Header -->
   <header>
+    <!-- Profile Picture (replace 'path/to/your-profile.jpg' with your actual image path) -->
+    <img src="images/prerna_profile_pic.jpg" alt="Profile Picture" class="profile-pic" />
+
     <h1>My Name</h1>
     <p>Front-End Developer | Designer | Life-long Learner</p>
   </header>
@@ -107,7 +120,7 @@
     <h2>Experience</h2>
     <h3>Company Name (Dates of Employment)</h3>
     <p>
-      Role: [Your Role Title]  
+      Role: [Your Role Title]<br>
       Responsibilities:
     </p>
     <ul>
@@ -115,9 +128,10 @@
       <li>Describe another responsibility or achievement</li>
       <li>Mention noteworthy project or accomplishment</li>
     </ul>
+
     <h3>Company Name (Dates of Employment)</h3>
     <p>
-      Role: [Your Role Title]  
+      Role: [Your Role Title]<br>
       Responsibilities:
     </p>
     <ul>
@@ -132,8 +146,8 @@
     <h2>Education</h2>
     <h3>Institution Name (Graduation Year)</h3>
     <p>
-      Degree: [Your Degree]  
-      Major: [Your Major/Minor]  
+      Degree: [Your Degree]<br>
+      Major: [Your Major/Minor]<br>
       GPA: [Optional]
     </p>
     <p>
@@ -151,7 +165,8 @@
         and the skills or technologies used (e.g., HTML/CSS/JavaScript, frameworks, etc.).
       </p>
       <p>
-        <strong>GitHub Repo:</strong> <a href="https://github.com/yourusername/yourproject" target="_blank">View on GitHub</a>
+        <strong>GitHub Repo:</strong> 
+        <a href="https://github.com/yourusername/yourproject" target="_blank">View on GitHub</a>
       </p>
     </article>
 
@@ -162,7 +177,8 @@
         and the skills or technologies used (e.g., Python, Node.js, etc.).
       </p>
       <p>
-        <strong>Live Demo:</strong> <a href="https://yourprojectdemo.com" target="_blank">Visit Site</a>
+        <strong>Live Demo:</strong> 
+        <a href="https://yourprojectdemo.com" target="_blank">Visit Site</a>
       </p>
     </article>
   </section>
