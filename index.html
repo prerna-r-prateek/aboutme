@@ -1,57 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prerna Prateek - Resume</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .container { width: 80%; margin: 0 auto; }
-        h1, h2 { color: #333; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Website</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header, nav, section, footer {
+      margin: 0 auto;
+      max-width: 900px;
+      padding: 1rem;
+    }
+
+    /* Header */
+    header {
+      background-color: #28527a;
+      color: #ffffff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #f1f1f1;
+      margin-bottom: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 0.75rem 1rem;
+      margin: 0.25rem;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+
+    /* Sections */
+    section {
+      background-color: #ffffff;
+      margin-bottom: 1rem;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #28527a;
+      padding-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Prerna Prateek</h1>
-        <p><strong>Full Stack Engineer</strong></p>
-        <p>Email: prerna.r.prateek@gmail.com</p>
 
-        <h2>Summary</h2>
-        <p>Experienced software developer with a passion for building web applications and working with data...</p>
+  <!-- Header -->
+  <header>
+    <h1>My Name</h1>
+    <p>Front-End Developer | Designer | Life-long Learner</p>
+  </header>
 
-        <h2>Education</h2>
-        <p><strong>Master of Science in Analytics</strong></p>
-        <p>Georgia Institute of technology, present</p>
+  <!-- Navigation -->
+  <nav>
+    <a href="#about-me">About Me</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#awards">Awards</a>
+    <a href="#certifications">Certifications</a>
+  </nav>
 
-        <p><strong>Master of Science in Software Engineering</strong></p>
-        <p>East Carolina University, 2016</p>
+  <!-- About Me -->
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm [Your Name], a [Your Profession] based in [Your Location]. 
+      I specialize in [mention a few skills] and enjoy working on [mention a type of project or area of expertise].
+      In my free time, I love [mention hobbies or interests].
+    </p>
+  </section>
 
-        <p><strong>Bachelor of Technology in Electrical Engineering</strong></p>
-        <p>Indian Institute of Technology (ISM), 2012</p>
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <h3>Company Name (Dates of Employment)</h3>
+    <p>
+      Role: [Your Role Title]  
+      Responsibilities:
+    </p>
+    <ul>
+      <li>Describe your key responsibility or achievement</li>
+      <li>Describe another responsibility or achievement</li>
+      <li>Mention noteworthy project or accomplishment</li>
+    </ul>
+    <h3>Company Name (Dates of Employment)</h3>
+    <p>
+      Role: [Your Role Title]  
+      Responsibilities:
+    </p>
+    <ul>
+      <li>Describe your key responsibility or achievement</li>
+      <li>Describe another responsibility or achievement</li>
+      <li>Mention noteworthy project or accomplishment</li>
+    </ul>
+  </section>
 
-        <h2>Experience</h2>
-        <p><strong>Senior Full Stack Engineer at Fidelity Investments</strong></p>
-        <p>August 2022 - April 2024</p>
-        <ul>
-            <li>Developed Segmented Control Component using Angular, Ionic, NgRx, RxJS, and other advanced front-end technologies. A Segmented Control is a linear set of two or more segments each functioning as a mutually exclusive button.</li>
-            <li>Engineered a reusable L3 page featuring a selection of predefined filtering options, allowing users to easily navigate and refine transaction data within specified time periods.</li>
-            <li>Spearheaded the end-to-end development of NetBenefits multi-platform mobile app, from ideation of new features to the deployment, using state of the art technologies in Agile Framework.</li>
-            <li>Singlehandedly incubated a research proposal to enhance the accuracy and interactivity of any chatbot using Generative AI to improve response quality and user engagement using Python and React </li>
-            <li>Managed code repositories using Git, implemented complex patterns with Regular Expressions and incorporated Jest for Test Driven Development.</li>
-        </ul>
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <h3>Institution Name (Graduation Year)</h3>
+    <p>
+      Degree: [Your Degree]  
+      Major: [Your Major/Minor]  
+      GPA: [Optional]
+    </p>
+    <p>
+      Brief description of any notable coursework, research, or extracurricular activities.
+    </p>
+  </section>
 
-        <p><strong>R & D Scientist II at Idaho National Laboratory</strong></p>
-        <p>July 2019 - August 2022</p>
-        <ul>
-            <li>Utilized Python Libraries (Pandas, NumPy, scikit-learn, Matplotlib, PyQt, etc.) and Object-Oriented Programming Principles to develop a suite of tools for automating metadata creation and streamlining data quality assessment for transportation datasets.</li>
-            <li>Created Regression Algorithms Toolbox to conduct analysis of Bioenergy datasets. </li>
-        </ul>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <article>
+      <h3>Project Title</h3>
+      <p>
+        Description: Provide a brief overview of the project, your role, 
+        and the skills or technologies used (e.g., HTML/CSS/JavaScript, frameworks, etc.).
+      </p>
+      <p>
+        <strong>GitHub Repo:</strong> <a href="https://github.com/yourusername/yourproject" target="_blank">View on GitHub</a>
+      </p>
+    </article>
 
-        <h2>Skills</h2>
-        <ul>
-            <li>Python, JavaScript, HTML/CSS</li>
-            <li>Angular, Node.js, Django</li>
-        </ul>
-    </div>
+    <article>
+      <h3>Another Project Title</h3>
+      <p>
+        Description: Provide a brief overview of the project, your role, 
+        and the skills or technologies used (e.g., Python, Node.js, etc.).
+      </p>
+      <p>
+        <strong>Live Demo:</strong> <a href="https://yourprojectdemo.com" target="_blank">Visit Site</a>
+      </p>
+    </article>
+  </section>
+
+  <!-- Awards -->
+  <section id="awards">
+    <h2>Awards</h2>
+    <ul>
+      <li>
+        <strong>Award Title:</strong> 
+        Description of the award, the awarding organization, and the date received.
+      </li>
+      <li>
+        <strong>Another Award Title:</strong> 
+        Description of the award, the awarding organization, and the date received.
+      </li>
+    </ul>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>
+        <strong>Certification Name</strong> – Issued by [Organization], Date Acquired
+      </li>
+      <li>
+        <strong>Another Certification</strong> – Issued by [Organization], Date Acquired
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
