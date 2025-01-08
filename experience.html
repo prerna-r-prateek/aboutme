@@ -61,7 +61,6 @@
       </ul>
   </section>
   <footer>
-    <p>&copy; 2025 Prerna Prateek. All rights reserved.</p>
         <a href="index.html" style="text-decoration: none; margin-top: 1rem;">
           <button style="
             padding: 10px 20px; 
@@ -73,6 +72,15 @@
             Back to Home
           </button>
         </a>
+        <div id="footer-container"></div>
   </footer>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
 </body>
 </html>
