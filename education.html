@@ -1,97 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fafafa;
-      color: #333;
-    }
-    header {
-      background-color: #28527a;
-      color: #ffffff;
-      text-align: center;
-      padding: 2rem;
-    }
-    section {
-      margin: 0 auto;
-      max-width: 900px;
-      padding: 2rem;
-      background-color: #ffffff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    section h2 {
-      border-bottom: 2px solid #28527a;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    footer {
-      text-align: center;
-      margin-top: 2rem;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Education</title>
+    <link rel="stylesheet" href="/css/education.css">
 </head>
+
 <body>
-  <header>
-    <h1>Education</h1>
-    <p>Academic Background and Achievements</p>
-  </header>
-  <section>
-    <h2>Education</h2>
-    <h3>Georgia Institute of Technology (ongoing)</h3>
-    <p>
-      Degree: Master of Science<br>
-      Major: Analytics<br>
-    </p>
-    <!-- <p>
-      Brief description of any notable coursework, research, or extracurricular activities.
-    </p> -->
+    <div class="education-section">
+        <div class="edu-header">
+            <a href="index.html" class="back-button">← Back</a>
+            <h2>Education</h2>  
+        </div>
+          
+        <div class="edu-entry">
+            <img src="images/gatech.png"
+                alt="GT Logo" class="edu-logo">
+            <div class="edu-content">
+                <h3>Georgia Institute of Technology</h3>
+                <p class="degree">Master of Science – MS, Analytics</p>
+                <p class="duration">Jan 2025</p>
+                <p class="grade">Grade: 4.00 (in-progress)</p>
+                <p class="courses">Courses: Computing for Data Analysis, Applied Natural Language Processing</p>
+            </div>
+        </div>
 
-    <h3>East Carolina University (2016)</h3>
-    <p>
-      Degree: Master of Science<br>
-      Major: Software Engineering<br>
-      GPA: 3.75
-    </p>
-    <!-- <p>
-      Mention any awards, distinctions, or unique experiences during your education.
-    </p> -->
+        <div class="edu-entry">
+            <img src="images/ecu.png" alt="ECU Logo"
+                class="edu-logo">
+            <div class="edu-content">
+                <h3>East Carolina University</h3>
+                <p class="degree">Master of Science (MS), Computer Software Engineering</p>
+                <p class="duration">2014 – 2016</p>
+                <p class="grade">Grade: 3.75</p>
+                <p class="courses">Software Project Management • Software Architecture and Design • Software Systems
+                    Modeling and Analysis • Software Verification and Validation • Software Construction • Software
+                    Engineering Foundations • Software Requirement Engineering • Cloud Computing</p>
+                <p class="skills"><strong>Skills:</strong> Java • AWS • Python • AI • MATLAB • Deep Learning • GCP •
+                    JavaScript • R • Front-End Development • Software Testing</p>
+                <div class="project">
+                    <p><strong><a href="https://thescholarship.ecu.edu/items/6ec374da-c320-47c7-a75e-56e783b50024"
+                                target="_blank" class="project-link">INTELLIGENT MODEL FOR IMAGE-BASED RECOMMENDATION
+                                SYSTEM</a></strong></p>
+                    <p class="project-summary short">
+                        Online shopping has developed in parallel with the Internet, and Recommendation Systems have
+                        played a pivotal role in its growth. The recommendations are usually provided in two ways:
+                        Content-based Filtering and Collaborative Filtering.
+                        <span class="more-text">
+                            Both forms of recommendations face the problem of Cold-Start due to an initial lack of
+                            information. To overcome this issue, Image-based Recommendation Systems are introduced in
+                            order to allow the users to locate products based on similarity of images when purchasing
+                            products in categories such as: clothes, shoes, home-decor, kitchen and dining utilities,
+                            jewelry, and accessories by mostly viewing images. In this thesis, a Hybrid Model of
+                            displaying similar images to that of the product being viewed was developed using Deep
+                            Features and Description-based Models. The Hybrid Model displayed a set composed of all
+                            images that belong to both Deep Features and Description-based Models. Implementation and
+                            comparison of results were performed on 100,000 images of SBU Captioned Photo Dataset.
+                        </span>
+                        <button class="read-more-btn" onclick="toggleText(this)">Read more</button>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <h3>Indian Institute of Technology-ISM (2012)</h3>
-    <p>
-      Degree: Bachelor of Technology  <br>
-      Major: Electrical Engineering <br>
-      GPA: 3.41
-    </p>
-  </section>
-  <footer>
-    <a href="index.html" style="text-decoration: none; margin-top: 1rem;">
-      <button style="
+        <div class="edu-entry">
+            <img src="images/IIT.png"
+                alt="IIT Dhanbad Logo" class="edu-logo">
+            <div class="edu-content">
+                <h3>Indian Institute of Technology (Indian School of Mines), Dhanbad</h3>
+                <p class="degree">Bachelor of Technology – BTech, Electrical and Electronics Engineering</p>
+                <p class="duration">Jun 2008 – Jun 2012</p>
+                <p class="grade">Grade: 3.41</p>
+                <p class="activities">Activities: Electrical Engineering Society, Entrepreneurship Cell, Kartavya NGO
+                </p>
+                <p class="courses">Courses: Computer Programming, Data Structures, Algorithms, Networking, Power Systems
+                    I & II, Linear Algebra, Vector Calculus, Real/Complex Analysis, Quantum Mechanics</p>
+                <p class="skills"><strong>Skills:</strong> CAD • Computer Programming • Algorithms • MATLAB • Computer
+                    Networking • Data Structures</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <a href="index.html" style="text-decoration: none; margin-top: 1rem;">
+            <button style="
         padding: 10px 20px; 
         background-color: #28527a; 
         color: white; 
         border: none; 
         border-radius: 5px; 
         cursor: pointer;">
-        Back to Home
-      </button>
-    </a>
-    <div id="footer-container"></div>
-  </footer>
-  <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
+                Back to Home
+            </button>
+        </a>
+        <div id="footer-container"></div>
+    </footer>
+    <script>
+        function toggleText(button) {
+            const moreText = button.previousElementSibling;
+            if (moreText.style.display === "inline") {
+                moreText.style.display = "none";
+                button.textContent = "Read more";
+            } else {
+                moreText.style.display = "inline";
+                button.textContent = "Show less";
+            }
+        }
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+
+    </script>
+
 </body>
+
 </html>
