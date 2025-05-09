@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fafafa;
-      color: #333;
-    }
-    header {
-      background-color: #28527a;
-      color: #ffffff;
-      text-align: center;
-      padding: 2rem;
-    }
-    section {
-      margin: 0 auto;
-      max-width: 900px;
-      padding: 2rem;
-      background-color: #ffffff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    section h2 {
-      border-bottom: 2px solid #28527a;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    footer {
-      text-align: center;
-      margin-top: 2rem;
-      color: #666;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>My Page</title>
+
+  <!-- link your .css file here -->
+  <link rel="stylesheet" href="css/projects.css" />
+
+  <!-- you can load more than one stylesheet if you like -->
+  <!-- <link rel="stylesheet" href="print.css" media="print" /> -->
 </head>
 <body>
-  <header>
-    <h1>Projects</h1>
-    <p>Highlighting My Work</p>
-  </header>
-  <section>
-    <h2>Projects</h2>
-    <article>
-      <h3>Project Title</h3>
-      <p>
-        Description: Provide a brief overview of the project, your role, 
-        and the skills or technologies used (e.g., HTML/CSS/JavaScript, frameworks, etc.).
-      </p>
-      <p>
-        <strong>GitHub Repo:</strong> 
-        <a href="https://github.com/yourusername/yourproject" target="_blank">View on GitHub</a>
-      </p>
-    </article>
-
-    <article>
-      <h3>Another Project Title</h3>
-      <p>
-        Description: Provide a brief overview of the project, your role, 
-        and the skills or technologies used (e.g., Python, Node.js, etc.).
-      </p>
-      <p>
-        <strong>Live Demo:</strong> 
-        <a href="https://yourprojectdemo.com" target="_blank">Visit Site</a>
-      </p>
+    <!---- RAG Demo Chatbot – Retrieval-Augmented Generation -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+  
+    <article class="project-card">
+      <img
+        src="images/rag-chatbot-preview.png"
+        alt="Screenshot of the RAG Demo Chatbot UI"
+        class="project-img"
+      />
+  
+      <div class="project-info">
+        <h3>Retrieval-Augmented Generation Demo Chatbot</h3>
+        <p>
+          A full-stack proof-of-concept that ties a React chat UI with a FastAPI
+          backend to answer questions over your own PDFs / text using vector
+          embeddings and generative-AI completion.
+        </p>
+  
+        <ul>
+          <li>FastAPI + Uvicorn server (backend)</li>
+          <li>React (frontend)</li>
+          <li>Embeddings → ChromaDB vector store</li>
+          <li>LangChain pipeline for Retrieval-Augmented Generation</li>
+        </ul>
+  
+        <a
+          class="btn btn-primary"
+          href="https://github.com/prerna-r-prateek/RAGdemoChatbot"
+          target="_blank"
+          rel="noopener"
+          >View Code ↗</a
+        >
+        <!-- optional live-demo link when deployed somewhere -->
+        <!-- <a class="btn btn-secondary" href="https://your-demo-link" target="_blank" rel="noopener">Live Demo ↗</a> -->
+  
+        <!-- fun GitHub badges (Shields.io) -->
+        <div class="badges">
+          <img
+            src="https://img.shields.io/github/languages/top/prerna-r-prateek/RAGdemoChatbot?style=flat-square"
+            alt="Top language"
+          />
+          <img
+            src="https://img.shields.io/github/stars/prerna-r-prateek/RAGdemoChatbot?style=social"
+            alt="GitHub stars"
+          />
+        </div>
+      </div>
     </article>
   </section>
   <footer>
@@ -82,14 +74,15 @@
       </button>
     </a>
     <div id="footer-container"></div>
-  </footer>
-  <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
+</footer>
+<script>
+fetch('footer.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('footer-container').innerHTML = data;
+  })
+  .catch(error => console.error('Error loading footer:', error));
+</script>
 </body>
 </html>
+  
